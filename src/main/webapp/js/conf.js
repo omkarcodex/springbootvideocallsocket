@@ -16,8 +16,7 @@ function leave() {
 /*
  * Prepare websocket for signaling server endpoint.
  */
-var signalingWebsocket = new WebSocket("wss://spring-websocket-video.herokuapp.com +
-	"/signal");
+var signalingWebsocket = new WebSocket("wss://spring-websocket-video.herokuapp.com/signal");
 
 signalingWebsocket.onmessage = function(msg) {
 	//console.log("Got message", msg.data);
